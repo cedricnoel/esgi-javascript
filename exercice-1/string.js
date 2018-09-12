@@ -89,8 +89,7 @@ function snake_case(string)
         return false;
     }
 
-    let words  = string.split(' ');
-    let result = words.join('_');
+    let result = string.split(' ').join('_');
 
     return result;
 }

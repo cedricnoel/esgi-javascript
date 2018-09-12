@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+
+# ------> node ------>
+    node_1okif1d30jlz3es3p:
+        container_name: node_1okif1d30jlz3es3p
+        image: node:alpine
+        user: "node"
+        working_dir: /node
+        volumes:
+            - .././:/node
+        environment:
+            NODE_ENV: dev
+        expose:
+            - 8081
+# <------ node <------
